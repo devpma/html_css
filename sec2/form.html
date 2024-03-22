@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사 양식</title>
+</head>
+<body>
+    <header>
+        <h1>설문조사 양식</h1>
+        <p>모든 항목에 빠짐없이 체크해주세요.</p>
+    </header>
+    <hr />
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="본명을 입력하세요">
+                <br />
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="메일 주소를 입력하세요">
+            </fieldset>
+            <fieldset>
+                <legend>설문</legend>
+                <p>커피 취향이 어떻게 되십니까?</p>
+                <input type="radio" id="sourness" name="age">
+                <label for="sourness">신맛</label>
+                <input type="radio" id="bitters" name="age">
+                <label for="bitters">쓴맛</label>
+                <input type="radio" id="taste" name="age">
+                <label for="taste">고소한맛</label>
+                <input type="radio" id="other" name="age">
+                <label for="other">그 외</label>
+
+                <p>커피 선택 시 그 기준은 어떻게 되시나요?</p>
+                <input type="checkbox" id="shop" name="academy">
+                <label for="shop">매장</label>
+                <input type="checkbox" id="price" name="academy">
+                <label for="price">가격</label>
+                <input type="checkbox" id="taste" name="academy">
+                <label for="taste">커피의 맛</label>
+                <input type="checkbox" id="dessert" name="academy">
+                <label for="dessert">디저트</label>
+            </fieldset>
+            <fieldset>
+                <legend>기타 의견</legend>
+                <textarea rows="3" cols="30" name="comment"></textarea>
+            </fieldset>
+            <input type="submit" value="제출">
+        </form>
+    </main>
+    <hr />
+    <footer>
+        <p>입력하느라 고생하셨습니다.</p>
+    </footer>
+</body>
+</html>
