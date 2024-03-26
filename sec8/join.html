@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식</title>
+    <link href="join.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>오즈코딩스쿨 회원가입</h1>
+        </header>
+        <main class="form-wrap">
+            <form>
+                <fieldset>
+                    <legend>필수 입력 사항</legend>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" placeholder="본명을 입력하세요">
+                    <br />
+                    <label for="email">아이디</label>
+                    <input type="text" id="user_id" name="uesr_id" placeholder="6자 이상 20자 미만 공백 없이 입력해주세요">
+                    <br />
+                    <label for="email">비밀번호</label>
+                    <input type="password" id="user_pw" name="uesr_pw" placeholder="대소문자로 입력해주세요">
+                    <br />
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" placeholder="메일 주소를 입력하세요">
+                    <br />
+                    <label for="email">휴대폰</label>
+                    <input type="text" id="tel" name="tel" placeholder="010-0000-0000 형태로 입력해 주세요">
+                    <br />
+                    <div class="btn-wrap">
+                        <input type="submit" value="가입하기">
+                        <input type="submit" value="취소">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>취미</legend>
+                    <input type="radio" id="coding" name="hobby">
+                    <label for="coding">코딩</label>
+                    <input type="radio" id="exercise" name="hobby">
+                    <label for="exercise">운동</label>
+                    <input type="radio" id="travel" name="hobby">
+                    <label for="travel">여행</label>
+                    <input type="radio" id="other" name="hobby">
+                    <label for="other">그 외</label>
+                    <br />
+                    <input type="checkbox" id="male" name="gender">
+                    <label for="shop">남</label>
+                    <input type="checkbox" id="female" name="gender">
+                    <label for="price">여</label>
+                    <input type="checkbox" id="none" name="gender">
+                    <label for="none">비밀</label>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
