@@ -1,0 +1,36 @@
+@keyframes bounce {
+    to{
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes line {
+    from {
+        width:1px;
+    }
+    to {
+        width:100%;
+    }
+}
+
+@keyframes move-left {
+    from {
+        transform:translateX(-50px);
+        opacity:0;
+    }
+    to {
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes move-right {
+    from {
+        transform:translateX(50px);
+        opacity:0;
+    }
+    to {
+        transform:translateX(0);
+        opacity:1;
+    }
+}

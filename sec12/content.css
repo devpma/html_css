@@ -1,0 +1,45 @@
+.content {
+    width:60%;
+}
+
+.info {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position:relative;
+    opacity:1;
+    transform:translateX(0);
+    animation:move-left 1s alternate;
+}
+.info dt,
+.info dd {
+    line-height:2;
+    letter-spacing:-1px;
+}
+.info dt {
+    width:20%;
+}
+.info dd {
+    width:80%;
+}
+.info dd strong {
+    font-weight:500;
+    position:relative;
+}
+.info dd strong:after {
+    content:"";
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:1px;
+    background:#333;
+    height:1px;
+    animation: line 1s infinite alternate;
+}
+.info dd + dt {
+    margin-top:1rem;
+}
+.info dd + dt + dd {
+    margin-top:1rem;
+}

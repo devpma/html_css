@@ -1,0 +1,33 @@
+
+html,
+body,
+.wrap,
+.container,
+.intro-wrap {
+    height:100%;
+}
+html {
+    font-size:16px;
+}
+
+.intro-wrap {
+    display:flex;
+    width:90%;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:100px;
+    background:#eee;
+    box-sizing:border-box;
+    border-radius:100%;
+    overflow-y:auto;
+}
+.intro-wrap::-webkit-scrollbar {
+    width:5px;
+}
+.intro-wrap::-webkit-scrollbar-thumb {
+    background:#eee;
+}
+.intro-wrap::-webkit-scrollbar-track {
+    background:#fff;
+}
