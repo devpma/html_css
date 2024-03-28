@@ -1,0 +1,127 @@
+html,
+body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    background:teal;
+}
+
+.header {
+    width:100%;
+    background:#fff;
+    padding:10px 0;
+    display:flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header .hd-logo {
+    font-size:1.5rem;
+    font-weight:900;
+    padding:0 3rem;
+}
+
+.hd-nav {
+    margin-left:5%
+}
+.hd-nav ul {
+    display:flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.hd-nav ul li {
+    font-size:.9rem;
+    list-style:none;
+}
+.hd-nav ul li a {
+    color:inherit;
+    text-decoration:none;
+}
+.hd-nav ul li + li {
+    margin-left:2rem;
+}
+
+.btn-nav,
+.nav-aside {
+    display:none;
+}
+
+@media screen and (max-width:1023px) {
+    .hd-nav {
+        display:none;
+    }
+    .btn-nav,
+    .nav-aside {
+        display:block;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .btn-nav {
+        padding:0 3rem;
+        position:relative;
+        z-index:10;
+        cursor:pointer;
+    }
+    .btn-nav span {
+        width:30px;
+        height:2px;
+        background:#333;
+        display:block;
+        transition: all .2s;
+    }
+    .btn-nav.on span:nth-of-type(1) {
+        transform: rotate(45deg);
+    }
+    .btn-nav.on span:nth-of-type(2) {
+        display:none;
+    }
+    .btn-nav.on span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -2px;
+    }
+
+    .btn-nav span:nth-of-type(2) {
+        margin:10px 0;
+    }
+    .nav-aside {
+        position:fixed;
+        right:-100%;
+        top:0;
+        height:100%;
+        background:#fff;
+        padding:10rem;
+        box-sizing:border-box;
+        border-left:1px solid #ddd;
+        transition:all .2s;
+    }
+    .nav-aside.on {
+        right:0;
+    }
+    .nav-aside ul {
+        margin:0;
+        padding:0;
+    }
+
+    .nav-aside ul li {
+        margin-bottom:2rem;
+        list-style:none;
+        text-align:center;
+    }
+    .nav-aside ul li a {
+        color:inherit;
+        text-decoration: none;
+    }
+}
